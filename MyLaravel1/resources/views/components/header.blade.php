@@ -1,3 +1,6 @@
 <header>
-    <h1>Header</h1>
+    <img src="{{ asset('/storage/assets/boolean-hotel.png') }}" alt="hotel logo">
+    <h1>
+        The Bernard's Grand Hotel
+    </h1>
 </header>

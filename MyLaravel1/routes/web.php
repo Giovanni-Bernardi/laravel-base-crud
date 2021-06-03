@@ -13,9 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/home', 'TestController@home')
--> name('home');
+Route::get('/', 'EmployeeController@home')->name('home');
+Route::get('/employee/{id}', 'EmployeeController@employee')->name('employee');
+Route::get('/newEmployee', 'EmployeeController@newEmployee') -> name('newEmployee');
+Route::post('/store', 'EmployeeController@store') -> name('store');
